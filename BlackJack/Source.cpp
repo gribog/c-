@@ -4,6 +4,8 @@
 #include <random>
 #include <Windows.h>
 
+//comment
+
 enum Mode
 {
 	MODE_NORMAL,
