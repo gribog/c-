@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hi-lo", "hi-lo\hi-lo.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BlackJack", "BlackJack\BlackJack.vcxproj", "{B3A2C763-522E-46CB-B5BC-88C631783C13}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Calculator", "Calculator\Calculator.vcxproj", "{873794E2-B95D-4479-8FDD-D36AAE3ACB77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{B3A2C763-522E-46CB-B5BC-88C631783C13}.Release|x64.Build.0 = Release|x64
 		{B3A2C763-522E-46CB-B5BC-88C631783C13}.Release|x86.ActiveCfg = Release|Win32
 		{B3A2C763-522E-46CB-B5BC-88C631783C13}.Release|x86.Build.0 = Release|Win32
+		{873794E2-B95D-4479-8FDD-D36AAE3ACB77}.Debug|x64.ActiveCfg = Debug|x64
+		{873794E2-B95D-4479-8FDD-D36AAE3ACB77}.Debug|x64.Build.0 = Debug|x64
+		{873794E2-B95D-4479-8FDD-D36AAE3ACB77}.Debug|x86.ActiveCfg = Debug|Win32
+		{873794E2-B95D-4479-8FDD-D36AAE3ACB77}.Debug|x86.Build.0 = Debug|Win32
+		{873794E2-B95D-4479-8FDD-D36AAE3ACB77}.Release|x64.ActiveCfg = Release|x64
+		{873794E2-B95D-4479-8FDD-D36AAE3ACB77}.Release|x64.Build.0 = Release|x64
+		{873794E2-B95D-4479-8FDD-D36AAE3ACB77}.Release|x86.ActiveCfg = Release|Win32
+		{873794E2-B95D-4479-8FDD-D36AAE3ACB77}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
