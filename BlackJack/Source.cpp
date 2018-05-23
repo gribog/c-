@@ -4,7 +4,6 @@
 #include <random>
 #include <Windows.h>
 
-//comment
 
 enum Mode
 {
@@ -12,7 +11,6 @@ enum Mode
 	MODE_DEBUG,
 };
 
-//this
 Mode mode = MODE_NORMAL; //can be changed to debug
 int delay = 1000;		//delay between turns
 
