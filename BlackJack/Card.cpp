@@ -43,6 +43,37 @@ void Card::printCard()
 	std::cout << "]";
 }
 
+std::string Card::getStringCard()
+{
+	std::string card = "[";
+	switch (m_rank)
+	{
+	case(RANK_2):			card += "2"; break;
+	case(RANK_3):			card += "3"; break;
+	case(RANK_4):			card += "4"; break;
+	case(RANK_5):			card += "5"; break;
+	case(RANK_6):			card += "6"; break;
+	case(RANK_7):			card += "7"; break;
+	case(RANK_8):			card += "8"; break;
+	case(RANK_9):			card += "9"; break;
+	case(RANK_10):			card += "T"; break;
+	case(RANK_JACK):		card += "J"; break;
+	case(RANK_QUEEN):		card += "Q"; break;
+	case(RANK_KING):		card += "K"; break;
+	case(RANK_ACE):			card += "A"; break;
+	}
+
+	switch (m_suit)
+	{
+	case(SUIT_CLUB):		card += "c"; break;
+	case(SUIT_DIAMOND):		card += "d"; break;
+	case(SUIT_HEART):		card += "h"; break;
+	case(SUIT_SPADE):		card += "s"; break;
+	}
+	card += "]";
+	return card;
+}
+
 int Card::getValue()
 {
 	switch (m_rank)

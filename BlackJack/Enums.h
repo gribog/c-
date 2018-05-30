@@ -14,6 +14,7 @@ enum PersonType
 {
 	PERSON_DEALER,
 	PERSON_PLAYER,
+	PERSON_COMPUTER,
 };
 
 enum GameResult
@@ -21,6 +22,7 @@ enum GameResult
 	RESULT_LOOSE,
 	RESULT_DRAW,
 	RESULT_WIN,
+	RESULT_BLACKJACK,
 };
 
 

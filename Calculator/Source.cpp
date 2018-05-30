@@ -41,13 +41,28 @@ int divide(int x, int y)
 
 typedef int (*arithmeticFcn)(int, int);
 
+struct arithmeticStruct
+{
+	char op;
+	arithmeticFcn fcn;
+};
+
+static arithmeticStruct arithmeticArray[] { 
+	{ '+', add },
+	{ '-', substract },
+	{ '*', multiply },
+	{ '/', divide } 
+};
+
 arithmeticFcn getArithmeticFunction(char op)
 {
-	switch (op)
+	for (const auto &arith : arithmeticArray)
 	{
-	case '+': return int(*add)(int, int);
+		if (arith.op == op)
+			return arith.fcn;
 	}
 
+	return add;
 }
 
 int main()
@@ -55,6 +70,11 @@ int main()
 	int firstNumber = getInt();
 	char mathOperator = getOperator();
 	int secondNumber = getInt();
+
+	arithmeticFcn fcn = getArithmeticFunction(mathOperator);
+
+	std::cout << firstNumber << mathOperator << secondNumber << '=' << fcn(firstNumber, secondNumber) << '\n';
+
 
 	return 0;
 }

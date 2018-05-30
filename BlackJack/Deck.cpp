@@ -23,12 +23,10 @@ void Deck::printDeck()
 
 }
 
-Card* Deck::dealCard()
+Card* Deck::dealCard(Person &person)
 {
-	std::cout << "dealing card ";
-	nextCard->printCard();
-	std::cout << '\n';
-	return nextCard++;
+	person.getCard(*m_nextCard);
+	return m_nextCard++;
 }
 
 void Deck::shuffle()
@@ -57,6 +55,8 @@ void Deck::shuffle()
 		card = m_cards[cardToSwapWith];
 		m_cards[cardToSwapWith] = temp;
 	}
+
+	m_nextCard = &m_cards[0];
 }
 
 void Deck::init()
